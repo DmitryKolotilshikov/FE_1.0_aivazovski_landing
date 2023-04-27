@@ -1,5 +1,10 @@
 :root {
     --bg-grey: #F6F6F6;
-    --co-grey: #828282;
+    --co-grey: #757575;
     --co-black: #000;
+
+    --break-x-small: 480px;
+    --break-small: 576px;
+    --break-medium: 768px;
+    --break-large: 992px;
 }
