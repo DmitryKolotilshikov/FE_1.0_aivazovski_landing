@@ -1,0 +1,46 @@
+.about {
+    background-color: var(--bg-grey);
+    padding: 55px 0;
+    text-align: center;
+}
+
+.about__title {
+    font-size: 34px;
+    margin-bottom: 40px;
+}
+
+.about__description-title-ru,
+.about__description-title-en,
+.about__description-ru,
+.about__description-en {
+    max-width: 780px;
+    margin: 0 auto 15px;
+    font-size: 18px;
+}
+
+.about__description-title-ru,
+.about__description-title-en {
+    text-align: center;
+}
+
+.about__description-ru,
+.about__description-en {
+    text-align: justify;
+}
+
+.about__divider {
+    margin: 15px auto;
+    max-width: 420px;
+    height: 1px;
+    background-color: var(--co-black);
+    border: none;
+}
+
+@media (max-width: 480px) {
+    .about__description-title-ru,
+    .about__description-title-en,
+    .about__description-ru,
+    .about__description-en {
+        font-size: 14px;
+    }
+}

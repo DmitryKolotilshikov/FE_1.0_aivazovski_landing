@@ -20,11 +20,13 @@
 
 .nav-link {
     color: var(--co-grey);
+    font-weight: 500;
+    display: block;
 }
 
 .nav-link:hover {
     color: var(--co-black);
-    font-weight: 700;
+    transform: scale(1.05);
 }
 
 @media (max-width: 480px) {
