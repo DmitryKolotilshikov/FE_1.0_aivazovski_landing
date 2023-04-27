@@ -5,5 +5,22 @@
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    background-color: bisque;
+    background-color: #fff;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 970px;
+    padding: 0 10px;
 }
