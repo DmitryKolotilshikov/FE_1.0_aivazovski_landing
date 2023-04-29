@@ -39,11 +39,52 @@
         </div>
     </header>
 
+    <div class="mobile-navigation" aria-label="mobile navigation">
+        <label for="checkbox" aria-label="open-close mobile navigation menu">
+            <svg class="mobile-navigation__burger" aria-label="burger icon">
+                <use href="Assets/sprites.svg#burger"></use>
+            </svg>
+        </label>
+
+        <input type="checkbox" id="checkbox" class="mobile-navigation__toggler">
+
+        <nav class="mobile-navigation__menu" aria-label="mobile navigation menu">
+            <ul class="mobile-navigation__list">
+                <li>
+                    <a href="#header-id" onclick="window.location.reload(true);" class="mobile-navigation__link" aria-label="link to home">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#about-id" onclick="window.location.reload(true);" class="mobile-navigation__link" aria-label="link to about">
+                        About
+                    </a>
+                </li>
+                <li>
+                    <a href="#history-id" onclick="window.location.reload(true);" class="mobile-navigation__link" aria-label="link to history">History</a>
+                </li>
+                <li>
+                    <a href="#portfolio-id" onclick="window.location.reload(true);" class="mobile-navigation__link" aria-label="link to portfolio">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#contacts-id" onclick="window.location.reload(true);" class="mobile-navigation__link" aria-label="link to contacts">Contacts</a>
+                </li>
+            </ul>
+
+            <label for="checkbox" aria-label="close mobile navigation menu" class="mobile-navigation__close">
+                <svg class="mobile-navigation__cross" aria-label="cross icon">
+                    <use href="Assets/sprites.svg#cross"></use>
+                </svg>
+            </label>
+        </nav>
+    </div>
+
     <main aria-label="main">
         <section class="home" aria-label="home section" tabindex="0">
             <div class="container">
                 <h1 class="home__title">Ivan Constantinovich Aivazovski</h1>
-                <p class="home__description" aria-label="description about Aivazovski">Russian marine painter of Armenian origin, collector, philanthropist</p>
+                <p class="home__description" aria-label="description about Aivazovski">Russian marine painter of
+                    Armenian origin, collector, philanthropist</p>
                 <div class="home__image">
                     <img src="Assets/webp/home.webp" alt="Aivazovski photo" arial-label="Aivazovski photo">
                 </div>
@@ -54,19 +95,25 @@
             <div class="container">
                 <h2 class="about__title" aria-label="about section title">About</h2>
                 <p class="about__description-title-ru" aria-label="description title in Russian">
-                    Иван Константинович Айвазовский – русский живописец-маринист армянского происхождения, коллекционер, меценат.
+                    Иван Константинович Айвазовский – русский живописец-маринист армянского происхождения, коллекционер,
+                    меценат.
                 </p>
                 <p class="about__description-ru" aria-label="description content in Russian">
-                    Будучи художником с мировой известностью, Иван Константинович Айвазовский предпочитал жить и работать на своей родине — в Крыму. Айвазовский наиболее известен своими морскими пейзажами, которые составляют больше половины его работ. Художник считается одним из величайших маринистов всех времён.
+                    Будучи художником с мировой известностью, Иван Константинович Айвазовский предпочитал жить и
+                    работать на своей родине — в Крыму. Айвазовский наиболее известен своими морскими пейзажами, которые
+                    составляют больше половины его работ. Художник считается одним из величайших маринистов всех времён.
                 </p>
 
                 <hr class="about__divider">
 
                 <p class="about__description-title-en" aria-label="description title in English">
-                    Ivan Konstantinovich Aivazovsky - Russian marine painter of Armenian origin, collector, philanthropist.
+                    Ivan Konstantinovich Aivazovsky - Russian marine painter of Armenian origin, collector,
+                    philanthropist.
                 </p>
                 <p class="about__description-en" aria-label="description content in English">
-                    Being a world famous artist, Ivan Konstantinovich Aivazovsky preferred to live and work in his homeland - in the Crimea. Aivazovsky is best known for his seascapes, which make up more than half of his work. The artist is considered one of the greatest marine painters of all time.
+                    Being a world famous artist, Ivan Konstantinovich Aivazovsky preferred to live and work in his
+                    homeland - in the Crimea. Aivazovsky is best known for his seascapes, which make up more than half
+                    of his work. The artist is considered one of the greatest marine painters of all time.
                 </p>
             </div>
         </section>
@@ -78,7 +125,7 @@
                     <img src="Assets/webp/history.webp" alt="house of Aivazovski" aria-label="house of Aivazovski">
                 </div>
                 <p class="history__image-description" aria-label="description about house of Aivazovski">
-                    Дом в котором родился Айвазовский | The house where Aivazovsky was born 
+                    Дом в котором родился Айвазовский | The house where Aivazovsky was born
                 </p>
             </div>
         </section>
@@ -87,24 +134,26 @@
             <div class="container">
                 <h2 class="portfolio__title">Portfolio</h2>
                 <div class="portfolio__image">
-                    <img src="Assets/webp/portfolio_1.webp" alt="picture Winter wagon train on the way" aria-label="picture Winter wagon train on the way">
+                    <img src="Assets/webp/portfolio_1.webp" alt="picture Winter wagon train on the way"
+                        aria-label="picture Winter wagon train on the way">
                 </div>
                 <p class="portfolio__image-description" aria-label="first picture description">
-                    Зимний обоз в пути, 1857 г. | Winter wagon train on the way, 1857 
+                    Зимний обоз в пути, 1857 г. | Winter wagon train on the way, 1857
                 </p>
 
                 <div class="portfolio__image">
                     <img src="Assets/webp/portfolio_2.webp" alt="picture Rainbow" aria-label="picture Rainbow">
                 </div>
                 <p class="portfolio__image-description" aria-label="second picture description">
-                    Радуга, 1873 г. | Rainbow, 1873 
+                    Радуга, 1873 г. | Rainbow, 1873
                 </p>
 
                 <div class="portfolio__image">
-                    <img src="Assets/webp/portfolio_3.webp" alt="picture Gulf of Naples in the morning" aria-label="picture Gulf of Naples in the morning">
+                    <img src="Assets/webp/portfolio_3.webp" alt="picture Gulf of Naples in the morning"
+                        aria-label="picture Gulf of Naples in the morning">
                 </div>
                 <p class="portfolio__image-description" aria-label="third picture description">
-                    Неаполитанский залив утром, 1893 г. | Gulf of Naples in the morning, 1893 
+                    Неаполитанский залив утром, 1893 г. | Gulf of Naples in the morning, 1893
                 </p>
             </div>
         </section>
